@@ -54,7 +54,7 @@ setup(
     keywords='idl',
     entry_points={
         'console_scripts': [
-            'recipec = itemlang.commands.console:recipec',
+            'recipec = recipec.console:recipec',
         ]
     },
     classifiers=[

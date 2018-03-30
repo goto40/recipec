@@ -16,6 +16,12 @@ See tests/demos
  * plans: group recipes, are used to generate documents
  * config: language dependent adaptations
 
+Install
+---------
+
+    sudo -H python3 setup.py install
+
+
 Usage
 ------
 
