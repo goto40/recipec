@@ -1,0 +1,442 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+subgraph "cluster_./tests/demos/schinken-bananen.recipe" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/schinken-bananen.recipe";
+                    139762761780528;
+139762761638464;
+139762761658440;
+139762761658608;
+139762761660064;
+139762761662360;
+
+}
+139762761780528 -> 139762761638464 [label="recipe" arrowtail=diamond dir=both]
+139762761638464 -> 139762760773584 [label="persons" ]
+139762760773584[label="{Personen:Persons|}"]
+139762761638464 -> 139762761658440 [label="ingredients:0" arrowtail=diamond dir=both]
+139762761658440 -> 139762760689200 [label="unit" ]
+139762760689200[label="{Scheiben:Unit|+weight:str='4'\l}"]
+139762761658440 -> 139762760688864 [label="type" ]
+139762760688864 -> 139762760689088 [label="units:0" arrowtail=diamond dir=both]
+139762760689088[label="{g:Unit|+weight:str='150'\l}"]
+139762760688864 -> 139762760689200 [label="units:1" arrowtail=diamond dir=both]
+139762760688864 -> 139762760689256 [label="units:2" arrowtail=diamond dir=both]
+139762760689256[label="{Scheibe:Unit|+weight:str='4'\l}"]
+139762760688864 -> 139762760689312 [label="units:3" arrowtail=diamond dir=both]
+139762760689312[label="{Pkg:Unit|+weight:str='1'\l}"]
+139762760688864[label="{Schinken:IngredientTypeDef|}"]
+139762761658440[label="{:Ingredient|+count:str='4'\l+description:str=''\l}"]
+139762761638464 -> 139762761658608 [label="ingredients:1" arrowtail=diamond dir=both]
+139762761658608 -> 139762760584272 [label="unit" ]
+139762760584272[label="{Stk:Unit|+weight:str='1'\l}"]
+139762761658608 -> 139762760584160 [label="type" ]
+139762760584160 -> 139762760583992 [label="units:0" arrowtail=diamond dir=both]
+139762760583992[label="{Stück:Unit|+weight:str='1'\l}"]
+139762760584160 -> 139762760584272 [label="units:1" arrowtail=diamond dir=both]
+139762760584160[label="{Bananen:IngredientTypeDef|}"]
+139762761658608[label="{:Ingredient|+count:str='4'\l+description:str=''\l}"]
+139762761638464 -> 139762761660064 [label="ingredients:2" arrowtail=diamond dir=both]
+139762761660064 -> 139762760771456 [label="unit" ]
+139762760771456[label="{g:Unit|+weight:str='200'\l}"]
+139762761660064 -> 139762760771064 [label="type" ]
+139762760771064 -> 139762760771456 [label="units:0" arrowtail=diamond dir=both]
+139762760771064 -> 139762760771344 [label="units:1" arrowtail=diamond dir=both]
+139762760771344[label="{Pkg:Unit|+weight:str='1'\l}"]
+139762760771064[label="{Reibekäse:IngredientTypeDef|}"]
+139762761660064[label="{:Ingredient|+count:str='50'\l+description:str=''\l}"]
+139762761638464 -> 139762761662360 [label="ingredients:3" arrowtail=diamond dir=both]
+139762761662360 -> 139762760772744 [label="unit" ]
+139762760772744[label="{EL:Unit|+weight:str='5'\l}"]
+139762761662360 -> 139762760771960 [label="type" ]
+139762760771960 -> 139762760772464 [label="units:0" arrowtail=diamond dir=both]
+139762760772464[label="{ml:Unit|+weight:str='60'\l}"]
+139762760771960 -> 139762760772576 [label="units:1" arrowtail=diamond dir=both]
+139762760772576[label="{g:Unit|+weight:str='60'\l}"]
+139762760771960 -> 139762760772632 [label="units:2" arrowtail=diamond dir=both]
+139762760772632[label="{Tassen:Unit|+weight:str='1'\l}"]
+139762760771960 -> 139762760772688 [label="units:3" arrowtail=diamond dir=both]
+139762760772688[label="{Tasse:Unit|+weight:str='1'\l}"]
+139762760771960 -> 139762760772744 [label="units:4" arrowtail=diamond dir=both]
+139762760771960[label="{Öl:IngredientTypeDef|}"]
+139762761662360[label="{:Ingredient|+count:str='3'\l+description:str=''\l}"]
+139762761638464[label="{:Recipe|+title:str='Schinken Bananen'\l+person_count:str='2'\l+description:str='* Bananen mit Schinken umwicklen\\n * Öl in die Pfanne (mittel-starke Hitze)\\n * umwickelte Bananen in die Pfanne\\n * Käse darüberstreuen\\n\\nPfanne zudecken. Käse schmelzen lassen. Genießen.'\l}"]
+139762761780528[label="{:Model|}"]
+subgraph "cluster_./tests/demos/bananen-schoko-muffins.recipe" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/bananen-schoko-muffins.recipe";
+                    139762761638128;
+139762761638352;
+139762761896624;
+139762761899648;
+139762761898304;
+139762761899816;
+139762761661408;
+139762761661352;
+139762761659952;
+
+}
+139762761638128 -> 139762761638352 [label="recipe" arrowtail=diamond dir=both]
+139762761638352 -> 139762760773584 [label="persons" ]
+139762761638352 -> 139762761896624 [label="ingredients:0" arrowtail=diamond dir=both]
+139762761896624 -> 139762760690488 [label="unit" ]
+139762760690488[label="{Tassen:Unit|+weight:str='8'\l}"]
+139762761896624 -> 139762760689984 [label="type" ]
+139762760689984 -> 139762760690264 [label="units:0" arrowtail=diamond dir=both]
+139762760690264[label="{g:Unit|+weight:str='1000'\l}"]
+139762760689984 -> 139762760690376 [label="units:1" arrowtail=diamond dir=both]
+139762760690376[label="{Packung:Unit|+weight:str='1'\l}"]
+139762760689984 -> 139762760690432 [label="units:2" arrowtail=diamond dir=both]
+139762760690432[label="{Pck:Unit|+weight:str='1'\l}"]
+139762760689984 -> 139762760690488 [label="units:3" arrowtail=diamond dir=both]
+139762760689984[label="{Mehl:IngredientTypeDef|}"]
+139762761896624[label="{:Ingredient|+count:str='1.5'\l+description:str=''\l}"]
+139762761638352 -> 139762761899648 [label="ingredients:1" arrowtail=diamond dir=both]
+139762761899648 -> 139762760627760 [label="unit" ]
+139762760627760[label="{TL:Unit|+weight:str='2'\l}"]
+139762761899648 -> 139762760627088 [label="type" ]
+139762760627088 -> 139762760627536 [label="units:0" arrowtail=diamond dir=both]
+139762760627536[label="{g:Unit|+weight:str='16'\l}"]
+139762760627088 -> 139762760627648 [label="units:1" arrowtail=diamond dir=both]
+139762760627648[label="{Packung:Unit|+weight:str='1'\l}"]
+139762760627088 -> 139762760627704 [label="units:2" arrowtail=diamond dir=both]
+139762760627704[label="{Pck:Unit|+weight:str='1'\l}"]
+139762760627088 -> 139762760627760 [label="units:3" arrowtail=diamond dir=both]
+139762760627088[label="{Backpulver:IngredientTypeDef|}"]
+139762761899648[label="{:Ingredient|+count:str='2.5'\l+description:str=''\l}"]
+139762761638352 -> 139762761898304 [label="ingredients:2" arrowtail=diamond dir=both]
+139762761898304 -> 139762760629216 [label="unit" ]
+139762760629216[label="{TL:Unit|+weight:str='10'\l}"]
+139762761898304 -> 139762760628768 [label="type" ]
+139762760628768 -> 139762760629104 [label="units:0" arrowtail=diamond dir=both]
+139762760629104[label="{g:Unit|+weight:str='30'\l}"]
+139762760628768 -> 139762760629216 [label="units:1" arrowtail=diamond dir=both]
+139762760628768 -> 139762760629272 [label="units:2" arrowtail=diamond dir=both]
+139762760629272[label="{Prise:Unit|+weight:str='30'\l}"]
+139762760628768 -> 139762760629328 [label="units:3" arrowtail=diamond dir=both]
+139762760629328[label="{Prisen:Unit|+weight:str='30'\l}"]
+139762760628768[label="{Salz:IngredientTypeDef|}"]
+139762761898304[label="{:Ingredient|+count:str='0.5'\l+description:str=''\l}"]
+139762761638352 -> 139762761899816 [label="ingredients:3" arrowtail=diamond dir=both]
+139762761899816 -> 139762760772632 [label="unit" ]
+139762761899816 -> 139762760771960 [label="type" ]
+139762761899816[label="{:Ingredient|+count:str='0.25'\l+description:str=''\l}"]
+139762761638352 -> 139762761661408 [label="ingredients:4" arrowtail=diamond dir=both]
+139762761661408 -> 139762760584272 [label="unit" ]
+139762761661408 -> 139762760584160 [label="type" ]
+139762761661408[label="{:Ingredient|+count:str='2'\l+count_max:str='3'\l+description:str='püriert'\l}"]
+139762761638352 -> 139762761661352 [label="ingredients:5" arrowtail=diamond dir=both]
+139762761661352 -> 139762760691496 [label="unit" ]
+139762760691496[label="{Tassen:Unit|+weight:str='0.5'\l}"]
+139762761661352 -> 139762760691272 [label="type" ]
+139762760691272 -> 139762760690768 [label="extends" ]
+139762760690768 -> 139762760691160 [label="units:0" arrowtail=diamond dir=both]
+139762760691160[label="{g:Unit|+weight:str='90'\l}"]
+139762760690768 -> 139762760691496 [label="units:1" arrowtail=diamond dir=both]
+139762760690768 -> 139762760691552 [label="units:2" arrowtail=diamond dir=both]
+139762760691552[label="{Tasse:Unit|+weight:str='0.5'\l}"]
+139762760690768[label="{Zucker:IngredientTypeDef|}"]
+139762760691272[label="{brauner Zucker:IngredientTypeDef|+units:list=[]\l}"]
+139762761661352[label="{:Ingredient|+count:str='0.5'\l+description:str=''\l}"]
+139762761638352 -> 139762761659952 [label="ingredients:6" arrowtail=diamond dir=both]
+139762761659952 -> 139762760770560 [label="unit" ]
+139762760770560[label="{g:Unit|+weight:str='100'\l}"]
+139762761659952 -> 139762760770168 [label="type" ]
+139762760770168 -> 139762760770560 [label="units:0" arrowtail=diamond dir=both]
+139762760770168 -> 139762760770448 [label="units:1" arrowtail=diamond dir=both]
+139762760770448[label="{Tafel:Unit|+weight:str='1'\l}"]
+139762760770168[label="{Schokolade:IngredientTypeDef|}"]
+139762761659952[label="{:Ingredient|+count:str='100'\l+description:str='gehackt'\l}"]
+139762761638352[label="{:Recipe|+title:str='Bananen Schoko Muffins'\l+person_count:str='4'\l+description:str='Alles Mischen und bei 180° 20 Minuten im Backofen backen.\\n'\l}"]
+139762761638128[label="{:Model|}"]
+subgraph "cluster_./tests/demos/teheraner-reis-schuessel.recipe" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/teheraner-reis-schuessel.recipe";
+                    139762761660344;
+139762761662136;
+139762760581920;
+139762760582088;
+139762760582256;
+139762760582424;
+139762760582592;
+139762760582760;
+139762760582928;
+139762760583096;
+
+}
+139762761660344 -> 139762761662136 [label="recipe" arrowtail=diamond dir=both]
+139762761662136 -> 139762760773584 [label="persons" ]
+139762761662136 -> 139762760581920 [label="ingredients:0" arrowtail=diamond dir=both]
+139762760581920 -> 139762760687688 [label="unit" ]
+139762760687688[label="{g:Unit|+weight:str='100'\l}"]
+139762760581920 -> 139762760630224 [label="type" ]
+139762760630224 -> 139762760687688 [label="units:0" arrowtail=diamond dir=both]
+139762760630224[label="{Reis:IngredientTypeDef|}"]
+139762760581920[label="{:Ingredient|+count:str='200'\l+description:str=''\l}"]
+139762761662136 -> 139762760582088 [label="ingredients:1" arrowtail=diamond dir=both]
+139762760582088 -> 139762760584272 [label="unit" ]
+139762760582088 -> 139762760584160 [label="type" ]
+139762760582088[label="{:Ingredient|+count:str='2'\l+description:str=''\l}"]
+139762761662136 -> 139762760582256 [label="ingredients:2" arrowtail=diamond dir=both]
+139762760582256 -> 139762760688640 [label="unit" ]
+139762760688640[label="{g:Unit|+weight:str='100'\l}"]
+139762760582256 -> 139762760688752 [label="type" ]
+139762760688752 -> 139762760688024 [label="extends" ]
+139762760688024 -> 139762760688640 [label="units:0" arrowtail=diamond dir=both]
+139762760688024[label="{Hackfleisch:IngredientTypeDef|}"]
+139762760688752[label="{gemischtes Hackfleisch:IngredientAlias|}"]
+139762760582256[label="{:Ingredient|+count:str='200'\l+description:str=''\l}"]
+139762761662136 -> 139762760582424 [label="ingredients:3" arrowtail=diamond dir=both]
+139762760582424 -> 139762760626640 [label="unit" ]
+139762760626640[label="{Tube:Unit|+weight:str='1'\l}"]
+139762760582424 -> 139762760626304 [label="type" ]
+139762760626304 -> 139762760626528 [label="units:0" arrowtail=diamond dir=both]
+139762760626528[label="{g:Unit|+weight:str='200'\l}"]
+139762760626304 -> 139762760626640 [label="units:1" arrowtail=diamond dir=both]
+139762760626304[label="{Tomatenmark:IngredientTypeDef|}"]
+139762760582424[label="{:Ingredient|+count:str='1'\l+description:str=''\l}"]
+139762761662136 -> 139762760582592 [label="ingredients:4" arrowtail=diamond dir=both]
+139762760582592 -> 139762760629272 [label="unit" ]
+139762760582592 -> 139762760628768 [label="type" ]
+139762760582592[label="{:Ingredient|+count:str='1'\l+description:str=''\l}"]
+139762761662136 -> 139762760582760 [label="ingredients:5" arrowtail=diamond dir=both]
+139762760582760 -> 139762760629216 [label="unit" ]
+139762760582760 -> 139762760629160 [label="type" ]
+139762760629160 -> 139762760628768 [label="extends" ]
+139762760629160[label="{Curry:IngredientTypeDef|+units:list=[]\l}"]
+139762760582760[label="{:Ingredient|+count:str='1'\l+description:str=''\l}"]
+139762761662136 -> 139762760582928 [label="ingredients:6" arrowtail=diamond dir=both]
+139762760582928 -> 139762760629272 [label="unit" ]
+139762760582928 -> 139762760628936 [label="type" ]
+139762760628936 -> 139762760628768 [label="extends" ]
+139762760628936[label="{Pfeffer:IngredientTypeDef|+units:list=[]\l}"]
+139762760582928[label="{:Ingredient|+count:str='1'\l+description:str=''\l}"]
+139762761662136 -> 139762760583096 [label="ingredients:7" arrowtail=diamond dir=both]
+139762760583096 -> 139762760626360 [label="unit" ]
+139762760626360[label="{Stk:Unit|+weight:str='1'\l}"]
+139762760583096 -> 139762760584552 [label="type" ]
+139762760584552 -> 139762760584664 [label="extends" ]
+139762760584664 -> 139762760626248 [label="units:0" arrowtail=diamond dir=both]
+139762760626248[label="{Stück:Unit|+weight:str='1'\l}"]
+139762760584664 -> 139762760626360 [label="units:1" arrowtail=diamond dir=both]
+139762760584664[label="{Zwiebeln:IngredientTypeDef|}"]
+139762760584552[label="{Zwiebel:IngredientAlias|}"]
+139762760583096[label="{:Ingredient|+count:str='1'\l+description:str=''\l}"]
+139762761662136[label="{:Recipe|+title:str='Teheraner Reis Schüssel'\l+person_count:str='4'\l+description:str='* Zwiebeln andünsten. Fleisch anbraten. Reis kochen.\\n * Alles (ausser Bananen) in eine Auflauffrom bei 180° in den Ofen.\\n * Nach 10 min. Bananen (in Scheiben) obendrauf dekorieren.\\n * Nochmal 10 min. Fertig.'\l}"]
+139762761660344[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/obst.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/obst.ingredient";
+                    139762760583432;
+139762760584160;
+139762760583992;
+139762760584272;
+139762760584104;
+
+}
+139762760583432 -> 139762760584160 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760583432 -> 139762760584104 [label="ingredientTypes:1" arrowtail=diamond dir=both]
+139762760584104 -> 139762760584160 [label="extends" ]
+139762760584104[label="{Banane:IngredientAlias|}"]
+139762760583432[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/gemuese.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/gemuese.ingredient";
+                    139762760584496;
+139762760584664;
+139762760626248;
+139762760626360;
+139762760584552;
+139762760626304;
+139762760626528;
+139762760626640;
+
+}
+139762760584496 -> 139762760584664 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760584496 -> 139762760584552 [label="ingredientTypes:1" arrowtail=diamond dir=both]
+139762760584496 -> 139762760626304 [label="ingredientTypes:2" arrowtail=diamond dir=both]
+139762760584496[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/backpulver.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/backpulver.ingredient";
+                    139762760626752;
+139762760627088;
+139762760627536;
+139762760627648;
+139762760627704;
+139762760627760;
+
+}
+139762760626752 -> 139762760627088 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760626752[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/gewuertze.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/gewuertze.ingredient";
+                    139762760627872;
+139762760628768;
+139762760629104;
+139762760629216;
+139762760629272;
+139762760629328;
+139762760628936;
+139762760629160;
+
+}
+139762760627872 -> 139762760628768 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760627872 -> 139762760628936 [label="ingredientTypes:1" arrowtail=diamond dir=both]
+139762760627872 -> 139762760629160 [label="ingredientTypes:2" arrowtail=diamond dir=both]
+139762760627872[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/reis.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/reis.ingredient";
+                    139762760629664;
+139762760630224;
+139762760687688;
+
+}
+139762760629664 -> 139762760630224 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760629664[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/fleisch.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/fleisch.ingredient";
+                    139762760687856;
+139762760688024;
+139762760688640;
+139762760688528;
+139762760688696;
+139762760688752;
+139762760688864;
+139762760689088;
+139762760689200;
+139762760689256;
+139762760689312;
+
+}
+139762760687856 -> 139762760688024 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760687856 -> 139762760688528 [label="ingredientTypes:1" arrowtail=diamond dir=both]
+139762760688528 -> 139762760688024 [label="extends" ]
+139762760688528[label="{Rinderhackfleisch:IngredientTypeDef|+units:list=[]\l}"]
+139762760687856 -> 139762760688696 [label="ingredientTypes:2" arrowtail=diamond dir=both]
+139762760688696 -> 139762760688024 [label="extends" ]
+139762760688696[label="{Schweinehackfleisch:IngredientTypeDef|+units:list=[]\l}"]
+139762760687856 -> 139762760688752 [label="ingredientTypes:3" arrowtail=diamond dir=both]
+139762760687856 -> 139762760688864 [label="ingredientTypes:4" arrowtail=diamond dir=both]
+139762760687856[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/mehl.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/mehl.ingredient";
+                    139762760689424;
+139762760689984;
+139762760690264;
+139762760690376;
+139762760690432;
+139762760690488;
+
+}
+139762760689424 -> 139762760689984 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760689424[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/zucker.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/zucker.ingredient";
+                    139762760690600;
+139762760690768;
+139762760691160;
+139762760691496;
+139762760691552;
+139762760691272;
+
+}
+139762760690600 -> 139762760690768 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760690600 -> 139762760691272 [label="ingredientTypes:1" arrowtail=diamond dir=both]
+139762760690600[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/schokolade.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/schokolade.ingredient";
+                    139762760769776;
+139762760770168;
+139762760770560;
+139762760770448;
+
+}
+139762760769776 -> 139762760770168 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760769776[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/kaese.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/kaese.ingredient";
+                    139762760770672;
+139762760771064;
+139762760771456;
+139762760771344;
+
+}
+139762760770672 -> 139762760771064 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760770672[label="{:Model|}"]
+subgraph "cluster_./tests/demos/ingredients/oel.ingredient" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/ingredients/oel.ingredient";
+                    139762760771568;
+139762760771960;
+139762760772464;
+139762760772576;
+139762760772632;
+139762760772688;
+139762760772744;
+
+}
+139762760771568 -> 139762760771960 [label="ingredientTypes:0" arrowtail=diamond dir=both]
+139762760771568[label="{:Model|}"]
+subgraph "cluster_./tests/demos/config/settings.config" {
+
+        penwidth=2.0
+        color=darkorange4;
+        label = "./tests/demos/config/settings.config";
+                    139762760772520;
+139762760773528;
+139762760773584;
+
+}
+139762760772520 -> 139762760773528 [label="config" arrowtail=diamond dir=both]
+139762760773528 -> 139762760773584 [label="persons" arrowtail=diamond dir=both]
+139762760773528[label="{german:Config|+ingredients:str='Zutaten'\l+recipe:str='Rezept'\l}"]
+139762760772520[label="{:Model|}"]
+
+}
