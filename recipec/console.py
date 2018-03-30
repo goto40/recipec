@@ -80,10 +80,16 @@ def get_all(model_repo, what):
     return lst
 
 def show_list_of_ingredients(model_repo):
-    for i in get_all(model_repo,what="IngredientType"):
+    for i in get_all(model_repo,what="IngredientTypeDef"):
         print("{:<30}: {:<30} from {}".format(
             i.name,
             ','.join([u.name for u in i.get_all_units()]),
+            get_model(i)._tx_filename
+        ))
+    for i in get_all(model_repo,what="IngredientAlias"):
+        print("{:<30}= {:<30} from {}".format(
+            i.name,
+            i.extends.name,
             get_model(i)._tx_filename
         ))
 
