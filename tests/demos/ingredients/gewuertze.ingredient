@@ -1,0 +1,9 @@
+ingredient Salz {
+    unit 30 g 
+    unit 10 TL
+    unit 30 Prise
+    unit 30 Prisen
+}
+
+ingredient Pfeffer (inherits from Salz) {}
+ingredient Curry (inherits from Salz) {}

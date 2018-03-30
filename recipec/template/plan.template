@@ -1,0 +1,19 @@
+# {{ plan.name }}
+## {{ config.ingredients }}
+
+{% for i in all_ingredients.keys() %}
+ * {{ all_ingredients[i] }} {{ i.get_default_unit().name }} {{ i.name }}
+{% endfor %}
+{% for e in plan.entries %}
+
+## {{e.name}}: {{ e.recipe.title }}
+  ___({{config.persons.name}}: {{e.person_count}})___
+
+{% for i in e.recipe.ingredients %}
+   * {{ i.to_str(e.person_count) }}
+{% endfor %}
+
+### {{ config.recipe }}
+{{ e.recipe.description }}
+
+{% endfor %}

@@ -1,0 +1,15 @@
+ingredient Hackfleisch {
+    unit 100 g
+}
+
+ingredient Rinderhackfleisch (inherits from Hackfleisch) {}
+ingredient Schweinehackfleisch (inherits from Hackfleisch) {}
+
+alias gemischtes Hackfleisch = Hackfleisch;
+
+ingredient Schinken {
+    unit 150 g
+    unit 4 Scheiben
+    unit 4 Scheibe
+    unit 1 Pkg
+}

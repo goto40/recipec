@@ -1,0 +1,6 @@
+ingredient Bananen {
+    unit 1 Stück
+    unit 1 Stk
+}
+
+alias Banane = Bananen;

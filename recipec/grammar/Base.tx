@@ -1,0 +1,47 @@
+Recipe:
+    title=LINE
+    persons=[Persons] ":" person_count=POS_FLOAT
+    SEPARATOR
+    ingredients+=Ingredient+
+    SEPARATOR
+    description=TEXT
+;
+
+Ingredient: "-" count=POS_FLOAT ("-" count_max=POS_FLOAT)? unit=[Unit] type=[IngredientType|IDEXT]
+("(" description=/[^)]+/ ")")?
+;
+
+IngredientType: IngredientTypeDef | IngredientAlias;
+
+IngredientAlias: "alias" name=IDEXT '=' extends=[IngredientTypeDef|IDEXT] ";";
+
+IngredientTypeDef: "ingredient" name=IDEXT ("(" "inherits" "from" extends=[IngredientTypeDef|IDEXT] ")")? "{"
+    units+=Unit*
+"}"
+;
+
+Unit: "unit" weight=POS_FLOAT name=ID;
+
+Config: "config" name=ID "{"
+    "keywords" "{"
+        persons=Persons
+    "}"
+    "language" "{"
+        "ingredients" ":" ingredients=STRING
+        "recipe" ":" recipe=STRING
+    "}"
+"}";
+Persons: "persons" ":" name=STRING;
+
+Plan: "plan" name=STRING "{"
+    entries+=PlanEntry+
+"}";
+
+PlanEntry: name=STRING ":" recipe=[Recipe|STRING] "x" person_count=POS_FLOAT;
+
+TEXT: /(.|\n)*/;
+SEPARATOR: /\-\-\-+/;
+LINE: /[^\+][^\n]+/;
+POS_FLOAT: UINT("."UINT)?;
+UINT: /\d+/;
+IDEXT: /(\w[\w\s]*)?\w/;

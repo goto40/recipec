@@ -1,0 +1,12 @@
+ingredient Zwiebeln {
+    unit 1 Stück
+    unit 1 Stk
+}
+
+alias Zwiebel = Zwiebeln;
+
+ingredient Tomatenmark {
+    unit 200 g
+    unit 1 Tube
+}
+

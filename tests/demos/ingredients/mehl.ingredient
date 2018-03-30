@@ -1,0 +1,7 @@
+ingredient Mehl {
+    unit 1000 g 
+    unit 1 Packung
+    unit 1 Pck
+    unit 8 Tassen
+}
+

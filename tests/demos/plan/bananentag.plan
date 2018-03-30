@@ -1,0 +1,5 @@
+plan "Bananen-Tag" {
+"Mittagessen": "schinken-bananen.recipe" x 3
+"Vier-Uhr": "bananen-schoko-muffins.recipe" x 4
+"Abendessen": "teheraner-reis-schuessel.recipe" x 4
+}

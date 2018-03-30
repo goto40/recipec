@@ -1,0 +1,9 @@
+ingredient Zucker {
+    unit 90 g
+    unit 0.5 Tassen
+    unit 0.5 Tasse
+}
+
+ingredient brauner Zucker (inherits from Zucker) {
+}
+
