@@ -6,4 +6,4 @@ Plan: "plan" name=STRING "{"
     entries+=PlanEntry+
 "}";
 
-PlanEntry: name=STRING ":" importUri=STRING "x" person_count=FLOAT;
+PlanEntry: name=STRING ":" importURI=STRING "x" person_count=FLOAT;

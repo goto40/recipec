@@ -6,14 +6,14 @@
 {% endfor %}
 {% for e in plan.entries %}
 
-## {{e.name}}: {{ e.recipe.title }}
+## {{e.name}}: {{ e.get_recipe().title }}
   ___({{config.persons.name}}: {{e.person_count}})___
 
-{% for i in e.recipe.ingredients %}
+{% for i in e.get_recipe().ingredients %}
    * {{ i.to_str(e.person_count) }}
 {% endfor %}
 
 ### {{ config.recipe }}
-{{ e.recipe.description }}
+{{ e.get_recipe().description }}
 
 {% endfor %}

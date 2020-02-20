@@ -6,7 +6,7 @@ import textx.scoping.providers as scoping_providers
 
 
 from recipec.mm_classes import IngredientTypeDef, Ingredient, \
-    IngredientAlias
+    IngredientAlias, PlanEntry
 
 @language('recipe-config', '*.config')
 def config_lang():
@@ -44,7 +44,7 @@ def recipe_lang():
 def plan_lang():
     this_folder = dirname(abspath(__file__))
     mm = metamodel_from_file(join(this_folder, "grammar", "Plan.tx"),
-                             classes=[Ingredient])
+                             classes=[PlanEntry])
     mm.register_scope_providers({
         "*.*": scoping_providers.PlainNameImportURI()  # each import is a recipe model
     })
