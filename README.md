@@ -16,6 +16,16 @@ See tests/demos
  * plans: group recipes, are used to generate documents
  * config: language dependent adaptations
 
+Test
+---------
+
+    virtualenv venv -p python3
+    source venv/bin/activate
+    pip install -r requriements.txt
+    pip install -e .
+    pytest tests
+
+
 Install
 ---------
 
@@ -25,4 +35,7 @@ Install
 Usage
 ------
 
-    recipec -- help. 
+    cd tests/demos
+    textx generate --target md bananentag.plan --overwrite
+ 
+(see `textx --help`)

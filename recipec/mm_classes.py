@@ -33,6 +33,7 @@ class IngredientAlias(ModelItemBase):
     def get_all_units(self):
         return self.extends.get_all_units()
 
+
 class Ingredient(ModelItemBase):
     def __init__(self, **kwargs):
         super(Ingredient, self).__init__()
@@ -67,3 +68,14 @@ class Ingredient(ModelItemBase):
         is_count_ref = float(self.unit.weight)
         should_count_ref = float(unit0.weight)
         return count / is_count_ref * should_count_ref
+
+
+class PlanEntry(ModelItemBase):
+    def __init__(self, **kwargs):
+        super(PlanEntry, self).__init__()
+        self._init_xtextobj(**kwargs)
+
+    def get_recipe(self):
+        assert len(self._tx_loaded_models)==1, "no wildcards for recipes supported"
+        recipe = self._tx_loaded_models[0].recipe
+        return recipe

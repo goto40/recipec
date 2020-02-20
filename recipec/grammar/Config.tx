@@ -1,3 +1,10 @@
-import Base
-
-Model: config=Config;
+Config: "config" name=ID "{"
+    "keywords" "{"
+        persons=Persons
+    "}"
+    "language" "{"
+        "ingredients" ":" ingredients=STRING
+        "recipe" ":" recipe=STRING
+    "}"
+"}";
+Persons: "persons" ":" name=STRING;
