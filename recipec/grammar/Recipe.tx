@@ -1,3 +1,22 @@
 import Base
+reference recipe-ingredient as i
+reference recipe-config as c
 
 Model: recipe=Recipe;
+
+Recipe:
+    title=LINE
+    persons=[c.Persons] ":" person_count=FLOAT
+    SEPARATOR
+    ingredients+=Ingredient+
+    SEPARATOR
+    description=TEXT
+;
+
+Ingredient:
+    "-" count=FLOAT
+    ("-" count_max=FLOAT)?
+    unit=[i.Unit]
+    type=[i.IngredientType|IDEXT]
+    ("(" description=/[^)]+/ ")")?
+;

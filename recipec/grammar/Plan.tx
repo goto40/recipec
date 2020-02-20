@@ -1,3 +1,9 @@
 import Base
 
 Model: plan=Plan;
+
+Plan: "plan" name=STRING "{"
+    entries+=PlanEntry+
+"}";
+
+PlanEntry: name=STRING ":" importUri=STRING "x" person_count=FLOAT;
